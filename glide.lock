@@ -1,0 +1,20 @@
+hash: 1ca90d74a298d4eac3f725503bac2946c4f792d68e0991bee8bb099e126af254
+updated: 2017-08-09T08:45:04.055221288-04:00
+imports:
+- name: github.com/oklog/ulid
+  version: 66bb6560562feca7045b23db1ae85b01260f87c5
+- name: github.com/rs/zerolog
+  version: 2ed2f2c974489526d10329dae76d0f175684109a
+  subpackages:
+  - internal/json
+  - log
+- name: golang.org/x/net
+  version: 1c05540f6879653db88113bc4a2b70aec4bd491f
+  subpackages:
+  - bpf
+  - icmp
+  - internal/iana
+  - internal/socket
+  - ipv4
+  - ipv6
+testImports: []

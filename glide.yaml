@@ -1,0 +1,10 @@
+package: github.com/sh3rp/ears
+import:
+- package: github.com/oklog/ulid
+- package: github.com/rs/zerolog
+  subpackages:
+  - log
+- package: golang.org/x/net
+  subpackages:
+  - icmp
+  - ipv4
