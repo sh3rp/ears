@@ -18,6 +18,7 @@ type Pinger struct {
 	Pings     map[string]*Ping
 	pingsLock *sync.Mutex
 	timeout   int64
+	stopLoop  bool
 }
 
 func NewPinger(timeout int64) *Pinger {
@@ -25,6 +26,7 @@ func NewPinger(timeout int64) *Pinger {
 		Pings:     make(map[string]*Ping),
 		pingsLock: &sync.Mutex{},
 		timeout:   timeout,
+		stopLoop:  false,
 	}
 	pinger.Start()
 
@@ -32,6 +34,7 @@ func NewPinger(timeout int64) *Pinger {
 }
 
 func (p *Pinger) Start() {
+	p.stopLoop = false
 	go p.ReadLoop()
 }
 
@@ -44,6 +47,9 @@ func (p *Pinger) done() bool {
 			return false
 		}
 	}
+
+	p.stopLoop = true
+
 	return true
 }
 
@@ -189,7 +195,7 @@ func (p *Pinger) ReadLoop() {
 
 	defer c.Close()
 
-	for {
+	for !p.stopLoop {
 		inData := make([]byte, 1500)
 
 		n, _, err := c.ReadFrom(inData)
