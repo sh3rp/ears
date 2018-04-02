@@ -223,8 +223,6 @@ func (p *Pinger) ReadLoop() {
 				p.Pings[id].Alive = false
 			}
 			p.pingsLock.Unlock()
-		default:
-			log.Error().Msgf("Unknown ICMP message type: %v", icmpResponse.Type)
 		}
 	}
 }
