@@ -1,0 +1,8 @@
+github.com/oklog/ulid v0.0.0-20170117200651-66bb6560562f h1:UpfE/Q64+1idrbE+phdstApLr3SJBSjkxg8AvRx1mSk=
+github.com/oklog/ulid v0.0.0-20170117200651-66bb6560562f/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=
+github.com/rs/zerolog v1.2.2 h1:o15UI9WaIwHpj/lkFtM+cBbBKIUa46RSvwCJpdGrnsA=
+github.com/rs/zerolog v1.2.2/go.mod h1:YbFCdg8HfsridGWAh22vktObvhZbQsZXe4/zB0OKkWU=
+github.com/sh3rp/ears v0.0.0-20180402110421-dd3cf66a847b h1:zLK5d2PK6Ed82LqpxXOFjhGcgJJAweXOozlOXa63hPc=
+github.com/sh3rp/ears v0.0.0-20180402110421-dd3cf66a847b/go.mod h1:ZDVQCIUhHx+PZcl7hArNszGtAyTPklMMstCnZD8KAnA=
+golang.org/x/net v0.0.0-20170809000501-1c05540f6879 h1:0rFa7EaCGdQPmZVbo9F7MNF65b8dyzS6EUnXjs9Cllk=
+golang.org/x/net v0.0.0-20170809000501-1c05540f6879/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
